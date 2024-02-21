@@ -11,7 +11,6 @@ inquirer
             name: 'text',
             message: 'Enter up to 3 characters: ',
             validate: function (input) {  // validate input length is between 1 and 3 characters
-
               const isValid = input.length >= 1 && input.length <= 3;
               return isValid ? true : 'Invalid! Please enter between 1-3 characters.';
           }, 
